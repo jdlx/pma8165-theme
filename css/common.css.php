@@ -1921,7 +1921,13 @@ textarea#partitiondefinition {
 }
 
 #list_server {
+
+    float: right;
+    text-align: right;
+    margin: 10px;
+
     list-style-image: none;
+    padding: 0;
 }
 
 /**
@@ -3030,6 +3036,12 @@ body .ui-widget {
 .icon {display:none}
 
 /* Display SOME icons */
+.icon.ic_b_home,
+.icon.ic_s_loggoff,
+.icon.ic_b_docs,
+.icon.ic_b_sqlhelp,
+.icon.ic_s_cog,
+.icon.ic_s_reload,
 .icon.ic_s_top,
 .icon.ic_s_db,
 .icon.ic_b_views,
@@ -3038,11 +3050,49 @@ body .ui-widget {
 .icon.ic_b_newdb,
 .icon.ic_b_plus,
 .icon.ic_b_minus,
-.menucontainer .icon,
-#topmenu .icon,
-.error .icon {
+.menucontainer a .icon,
+#topmenu a .icon,
+.error a .icon {
     display:inline-block;
+
+    filter: invert(50%);
+    -webkit-filter: invert(50%);
+
+    transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+
+    transition: filter 600ms, transform 600ms;
+    -webkit-transition: -webkit-filter 600ms, -webkit-transform 600ms;
 }
+
+a:hover .icon.ic_b_home,
+a:hover .icon.ic_s_loggoff,
+a:hover .icon.ic_b_docs,
+a:hover .icon.ic_b_sqlhelp,
+a:hover .icon.ic_s_cog,
+a:hover .icon.ic_s_reload,
+a:hover .icon.ic_s_top,
+a:hover .icon.ic_s_db,
+a:hover .icon.ic_b_views,
+a:hover .icon.ic_b_group,
+a:hover .icon.ic_b_browse[title=Tables],
+a:hover .icon.ic_b_newdb,
+a:hover .icon.ic_b_plus,
+a:hover .icon.ic_b_minus,
+.menucontainer a:hover .icon,
+#topmenu a:hover .icon,
+.error a:hover .icon {
+
+    filter: invert(0);
+    -webkit-filter: invert(0);
+
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+
+    transition: filter 1600ms, transform 1600ms;
+    -webkit-transition: -webkit-filter 1600ms, -webkit-transform 1600ms;
+}
+
 
 .icon.ic_b_group {
 margin-top: -12px !important;
@@ -3190,11 +3240,26 @@ div.group.pmagroup li a {
 }
 
 #navipanellinks {
+    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: center;
-    padding: 1em 0;
+    /*background-color: <?php //echo $GLOBALS['cfg']['BorderColor']; ?>;*/
 }
-#navipanellinks a {
-    margin: 0 .35em;
+
+#navipanellinks a
+{
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    color: <?php echo $GLOBALS['cfg']['MainColor']; ?>;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#navipanellinks a:hover
+{
+    color: <?php echo $GLOBALS['cfg']['ThColor']; ?>;
 }
 
 #pma_navigation_tree div.block {
