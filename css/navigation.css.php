@@ -113,7 +113,7 @@ $navLineColor = '#222';
     color: <?php echo $GLOBALS['cfg']['NaviPointerColor']; ?>;
 }
 #pma_navigation_tree li.selected {
-    color: <?php echo $GLOBALS['cfg']['NaviPointerColor']; ?>;    
+    color: <?php echo $GLOBALS['cfg']['NaviPointerColor']; ?>;
 }
 #pma_navigation_tree li .dbItemControls {
     padding-left: 4px;
@@ -156,7 +156,7 @@ $navLineColor = '#222';
     float: <?php echo $left; ?>;
 }
 #pma_navigation_tree div.block i,
-#pma_navigation_tree div.block b {    
+#pma_navigation_tree div.block b {
     height: 1.5em;
     min-width: 10px;
     min-height: 8px;
@@ -195,7 +195,7 @@ $navLineColor = '#222';
 }
 #pma_navigation_tree div.block img.ic_s_db,
 #pma_navigation_tree div.block img.ic_b_newdb {
-    top: -10px;    
+    top: -10px;
 }
 #pma_navigation_tree div.throbber img {
     top: 2px;
@@ -270,7 +270,7 @@ li.fast_filter.db_fast_filter {
 #pma_navigation_resizer {
     width: 3px;
     height: 100%;
-    background-color: rgba(0,0,0,0.1);    
+    background-color: rgba(0,0,0,0.1);
     cursor: col-resize;
     position: fixed;
     top: 8em;
@@ -291,7 +291,7 @@ li.fast_filter.db_fast_filter {
     text-align: center;
     cursor: pointer;
     z-index: 800;
-    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);        
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
 }
 
 #pma_navigation_header {
@@ -556,7 +556,7 @@ li.fast_filter.db_fast_filter {
 }
 #pma_navigation_tree div.block img {
     position: relative;
-    top: -0.6em;
+    top: -0.3em;
 <?php echo $left; ?>: 0;
     margin-<?php echo $left; ?>: -7px;
 }
