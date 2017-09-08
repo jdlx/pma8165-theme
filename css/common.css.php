@@ -510,7 +510,7 @@ button.mult_submit {
 table tr.odd th,
 .odd {
     background: #151515;
-    <?php echo $_SESSION['PMA_Theme']->getCssIEClearFilter(); ?>
+    <?php /*echo $_SESSION['PMA_Theme']->getCssIEClearFilter();*/ ?>
 }
 
 /* even items 2,4,6,8,... */
@@ -518,7 +518,7 @@ table tr.odd th,
 table tr.even th,
 .even {
     background: none;
-    <?php echo $_SESSION['PMA_Theme']->getCssIEClearFilter(); ?>
+    <?php /*echo $_SESSION['PMA_Theme']->getCssIEClearFilter();*/ ?>
 }
 
 /* odd table rows 1,3,5,7,... */
