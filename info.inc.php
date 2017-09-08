@@ -13,5 +13,3 @@
 
 $theme_name = 'pma8165';
 $theme_full_version = '1.5';
-
-?>
